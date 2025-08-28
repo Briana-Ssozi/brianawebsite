@@ -1,0 +1,318 @@
+html{
+    font-size: 70.5%;
+
+}
+body{
+    width:100%;
+    height:100vh;
+    overflow-x: hidden; 
+    background-color: #543b2d;
+    color: white ;
+
+/*  come back to change the body style*/ 
+
+
+}
+.frontheader{
+    margin-top: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width :100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: enter;
+    z-index: 100;
+} 
+
+
+/* you can change the each header and paragraph style */ 
+/* why it is only the paragarh is clickable:*/
+   p{
+  
+    overflow-x: hidden; 
+    background-color :transparent;
+    color: white  ;
+    font-family: Papyrus;
+    font-size: 14pt;
+    text-indent:30px ;
+    margin: 15px;
+    word-spacing: 3px;
+    line-height: 1.5;
+    /* line spacing */
+}
+h1{
+    
+    overflow-x: hidden; 
+    background-color: transparent;
+    color: #F5E5C0 ;
+    font-family:  'Palatino';
+     font-size: 20pt;
+    text-indent:30px ;
+    margin: 15px;
+    word-spacing: 3px;
+    text-align: center;
+}
+h2{
+    
+    overflow-x: hidden; 
+    background-color: transparent;
+    color: #D3D3D3 ;
+    font-family: cursive, 'Oswald';
+    font-size: 15pt;
+    text-indent:30px ;
+    margin: 15px;
+    word-spacing: 3px;
+    text-align: center;
+}
+
+/* this will stack them verticallicy and horzantionly then give spcing */
+.center-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.centers-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+.home-img{
+    width: 400px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+    
+}
+ .home-img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid  #af804f;
+    cursor: pointer;
+    transition: 0.2s linear;
+   
+    
+}
+
+.home-img img:hover{
+    font-size:1.8rem;
+    font-weight:500;
+
+}
+
+
+
+
+/* navigation bar styles */
+.logo{
+margin-bottom: 20px;
+font-size: 3rem; 
+color: #f5cba7 ;
+font-weight:800;
+cursor:pointer;
+transition: 0.5s ease;
+}
+
+.logo:hover{
+transform:scale(1.1);
+margin-top: 20px;
+}
+/* the option for the homepage */
+nav a {
+    font-size:1.8rem;
+    color: #af804f ;
+    font-family:"Herculanum", Palatino ; 
+    margin-left: 4rem;
+    font-weight:500;
+    transition: 0.3s ease;  
+    text-decoration: none;
+    
+}
+/* the option for the homepage  but to hover*/
+nav a:hover, 
+nav a.active{
+    color:  #5dade2;
+    text-decoration: none;
+    
+}
+/* the option for the homepage  but to hover*/
+@media(max-width:995px){
+    nav{
+        position:absolute;
+        top:0;
+        display:none;
+        right: 0;
+        width:40%;
+        border-left:3px  solid  #af804f ;
+        border-bottom: 3px  solid  #af804f ;
+        padding: 1rem solid  #af804f ;
+        background-color:transparent;
+        border-top: 0.1rem solid rgba (0,0,0,0,1);
+
+    }
+
+    nav.active{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin:3rem 0;
+    }
+
+    nav:hover,
+    nav a.active
+    {
+        padding:1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid  #5dade2;
+
+
+    }
+
+}
+
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    /*border: 0.2rem solid  #227c9d;*/
+    font-size: 2rem;
+    /*border-radius: 50%;*/
+    margin: 3rem, 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #543b2d;
+}
+.social-icons a:hover{
+   color: #af804f;
+   /* transform - */
+   transform: scale(1.3)translateY(-5px);
+   background-color:  transparent;
+   box-shadow: 0 0 25px  transparent;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: transparent;
+     font-family: Brush Script MT ,system-ui;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #af804f;
+    border: 2px solid  #af804f;
+    border-radius: 4rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+   line-height: 1.5;
+   text-align: center;
+   /* this will take off the underline on links*/
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: #543b2d;
+    color:  #af804f;
+    transform: scale3d(1.03);
+    box-shadow: 0 0 25px black;
+    line-height: 1.5;
+   text-align: center;
+}
+
+typing-text{
+    font-size:34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-texts span{
+    color: #A3c1Ad;
+    animation: typing 3s steps(30, end) infinite;
+    position: relative;
+}
+ /*   */
+.typing-texts span::before{
+    content: "software engineer";
+    color:  #A3c1Ad ;
+    animation: words 15s infinite;
+}
+
+typing-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color : transparent;
+    border-left:3px solid transparent;
+    right: -8;
+    animation: cursor 0.4s infinite;
+}
+@keyframes cursor {
+    to{
+         border-left: 3px solid  #b08d57 ;
+    }
+    
+}
+/* Animation for changing words */
+
+@keyframes words {
+    0%{
+        content: " a daughter";
+    }
+    20%{
+        content: "a sister";
+    }
+    40%{
+        content: " a first generation student";
+    }
+    60%{
+        content: " a middle child";
+    }
+    80%{
+        content: " Ugandan-American";
+    }
+    100%{
+        content: " a learner";
+    }
+}
+/* Animation for typing effect */
+@media (max-width: 100px){
+    .home{
+        gap:4rem;
+    }  
+}
+@media (max-width: 995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+    .home.home-content h3{
+        font-size: 2.5rem;
+    }
+    .home.home-content h1{
+        font-size: 5rem;
+    }
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+       
+    }
+}
